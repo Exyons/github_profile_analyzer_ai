@@ -5,7 +5,7 @@ An intelligent, AI-powered tool that analyzes GitHub profiles to provide actiona
 ## Deployment
 > [Link](https://github-profile-analyzer-ai.vercel.app)
 
-## 📹 Live Demo
+## 📹 Demo Video
 
 > *[Link to video](https://drive.google.com/file/d/1eklisS9kD8AhTSOazaE-BfZXqX85wI-j/view?usp=sharing)*
 
