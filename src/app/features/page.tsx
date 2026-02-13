@@ -75,8 +75,7 @@ export default function FeaturesPage() {
                     </Link>
                     <nav className="hidden items-center gap-6 text-xs text-gray-500 sm:flex">
                         <a href="#analysis" className="transition-colors hover:text-white">Analysis</a>
-                        <a href="#multi-provider" className="transition-colors hover:text-white">Providers</a>
-                        <a href="#export" className="transition-colors hover:text-white">Export</a>
+                        <a href="#security" className="transition-colors hover:text-white">Security</a>
                         <a href="#enhancements" className="transition-colors hover:text-white">Enhancements</a>
                     </nav>
                 </div>
@@ -192,125 +191,74 @@ export default function FeaturesPage() {
                 {/* ═══════════════════════════════════════════════════════════
                     SECTION 2 — MULTI-PROVIDER AI
                    ═══════════════════════════════════════════════════════════ */}
-                <section id="multi-provider" className="mb-28 scroll-mt-20">
+                {/* ═══════════════════════════════════════════════════════════
+                    SECTION 2 — PRIVATE & SECURE AI
+                   ═══════════════════════════════════════════════════════════ */}
+                <section id="security" className="mb-28 scroll-mt-20">
                     <Reveal>
                         <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-cyan-500/20 bg-cyan-500/10 px-3 py-1 text-xs font-medium text-cyan-300">
-                            <Brain className="h-3 w-3" />
-                            Multi-Provider AI
+                            <Lock className="h-3 w-3" />
+                            Private & Secure AI
                         </div>
                         <h2 className="mb-3 text-3xl font-bold text-white sm:text-4xl">
-                            Bring Your Own Brain
+                            Enterprise-Grade Security
                         </h2>
                         <p className="mb-10 max-w-2xl text-sm leading-relaxed text-gray-400 sm:text-base">
-                            We believe in choice. Pick the AI engine that fits your needs — whether that&apos;s
-                            the cutting-edge GPT-4o from OpenAI, Google&apos;s blazing-fast Gemini Flash,
-                            or a fully local Ollama instance for maximum privacy. Your keys, your data, your rules.
+                            Your data never leaves your infrastructure. Powered exclusively by your own secured
+                            Ollama instance, ensuring complete privacy and control over your codebase analysis.
                         </p>
                     </Reveal>
 
-                    <div className="grid gap-4 sm:grid-cols-3">
+                    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                         <Reveal delay={0.1}>
                             <div className="glass-card feature-glow p-6 text-center">
                                 <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white">
-                                    <Globe className="h-7 w-7" />
+                                    <Server className="h-7 w-7" />
                                 </div>
-                                <h4 className="mb-1 text-base font-semibold text-white">OpenAI</h4>
-                                <p className="mb-3 text-xs text-gray-400">GPT-4o &amp; GPT-4o-mini</p>
+                                <h4 className="mb-1 text-base font-semibold text-white">Self-Hosted Ollama</h4>
+                                <p className="mb-3 text-xs text-gray-400">Llama 3 & Beyond</p>
                                 <ul className="space-y-1.5 text-left text-xs text-gray-400">
-                                    <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-3 w-3 flex-shrink-0 text-emerald-400" /> Best-in-class reasoning</li>
-                                    <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-3 w-3 flex-shrink-0 text-emerald-400" /> JSON mode support</li>
-                                    <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-3 w-3 flex-shrink-0 text-emerald-400" /> Cloud-hosted, fast response</li>
+                                    <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-3 w-3 flex-shrink-0 text-emerald-400" /> Full control over models</li>
+                                    <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-3 w-3 flex-shrink-0 text-emerald-400" /> Zero external API latency</li>
+                                    <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-3 w-3 flex-shrink-0 text-emerald-400" /> No data egress</li>
                                 </ul>
                             </div>
                         </Reveal>
                         <Reveal delay={0.2}>
                             <div className="glass-card feature-glow p-6 text-center">
                                 <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 text-white">
-                                    <Zap className="h-7 w-7" />
+                                    <Shield className="h-7 w-7" />
                                 </div>
-                                <h4 className="mb-1 text-base font-semibold text-white">Google Gemini</h4>
-                                <p className="mb-3 text-xs text-gray-400">Gemini 2.0 Flash &amp; 1.5 Pro</p>
+                                <h4 className="mb-1 text-base font-semibold text-white">Secure Communication</h4>
+                                <p className="mb-3 text-xs text-gray-400">End-to-End Encryption</p>
                                 <ul className="space-y-1.5 text-left text-xs text-gray-400">
-                                    <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-3 w-3 flex-shrink-0 text-blue-400" /> Blazing-fast inference</li>
-                                    <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-3 w-3 flex-shrink-0 text-blue-400" /> Generous free tier</li>
-                                    <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-3 w-3 flex-shrink-0 text-blue-400" /> Native JSON output</li>
+                                    <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-3 w-3 flex-shrink-0 text-blue-400" /> Direct-to-Ollama calls</li>
+                                    <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-3 w-3 flex-shrink-0 text-blue-400" /> HTTPS everywhere</li>
+                                    <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-3 w-3 flex-shrink-0 text-blue-400" /> No middleman logging</li>
                                 </ul>
                             </div>
                         </Reveal>
                         <Reveal delay={0.3}>
                             <div className="glass-card feature-glow p-6 text-center">
                                 <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-500 to-purple-600 text-white">
-                                    <Server className="h-7 w-7" />
+                                    <Lock className="h-7 w-7" />
                                 </div>
-                                <h4 className="mb-1 text-base font-semibold text-white">Ollama (Local)</h4>
-                                <p className="mb-3 text-xs text-gray-400">Llama 3, Mistral, CodeLlama &amp; more</p>
+                                <h4 className="mb-1 text-base font-semibold text-white">Compliance Ready</h4>
+                                <p className="mb-3 text-xs text-gray-400">For Enterprise & Teams</p>
                                 <ul className="space-y-1.5 text-left text-xs text-gray-400">
-                                    <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-3 w-3 flex-shrink-0 text-violet-400" /> 100% local — zero data leaves your machine</li>
-                                    <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-3 w-3 flex-shrink-0 text-violet-400" /> Auto-discovers installed models</li>
-                                    <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-3 w-3 flex-shrink-0 text-violet-400" /> No API key required</li>
+                                    <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-3 w-3 flex-shrink-0 text-violet-400" /> Audit-friendly architecture</li>
+                                    <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-3 w-3 flex-shrink-0 text-violet-400" /> Private repo analysis</li>
+                                    <li className="flex items-start gap-2"><CheckCircle2 className="mt-0.5 h-3 w-3 flex-shrink-0 text-violet-400" /> No third-party data sharing</li>
                                 </ul>
                             </div>
                         </Reveal>
                     </div>
-
-                    <Reveal delay={0.4} className="mt-6">
-                        <div className="flex items-start gap-3 rounded-xl border border-violet-500/10 bg-violet-500/5 p-4">
-                            <Lock className="mt-0.5 h-5 w-5 flex-shrink-0 text-violet-400" />
-                            <div>
-                                <p className="text-sm font-medium text-white">Your keys stay on your device</p>
-                                <p className="text-xs text-gray-400">
-                                    API keys are stored in your browser&apos;s localStorage and sent directly to the provider
-                                    over HTTPS. They never touch our servers or leave your machine.
-                                </p>
-                            </div>
-                        </div>
-                    </Reveal>
                 </section>
 
                 {/* ═══════════════════════════════════════════════════════════
                     SECTION 3 — PDF EXPORT
                    ═══════════════════════════════════════════════════════════ */}
-                <section id="export" className="mb-28 scroll-mt-20">
-                    <Reveal>
-                        <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-300">
-                            <FileDown className="h-3 w-3" />
-                            PDF Export
-                        </div>
-                        <h2 className="mb-3 text-3xl font-bold text-white sm:text-4xl">
-                            One-Click Profile Audit Report
-                        </h2>
-                        <p className="mb-10 max-w-2xl text-sm leading-relaxed text-gray-400 sm:text-base">
-                            After analysis, generate a professional, recruiter-ready PDF document with a single
-                            click. The report includes your Hiring Score, skill radar, bio comparison, README
-                            critiques, and the full action plan — beautifully formatted and ready to attach
-                            to job applications or share on LinkedIn.
-                        </p>
-                    </Reveal>
 
-                    <div className="grid gap-4 sm:grid-cols-3">
-                        <Reveal delay={0.1}>
-                            <DetailCard
-                                icon={<BarChart3 className="h-5 w-5" />}
-                                title="Visual Score Breakdown"
-                                description="The PDF includes your Hiring Score gauge, 5-axis radar chart, and language distribution — all pixel-perfect."
-                            />
-                        </Reveal>
-                        <Reveal delay={0.2}>
-                            <DetailCard
-                                icon={<BookOpen className="h-5 w-5" />}
-                                title="README Audit Trail"
-                                description="Each critiqued README is documented with strengths, weaknesses, and specific suggestions for improvement."
-                            />
-                        </Reveal>
-                        <Reveal delay={0.3}>
-                            <DetailCard
-                                icon={<Shield className="h-5 w-5" />}
-                                title="Shareable & Private"
-                                description="The PDF is generated entirely in your browser using html2canvas and jsPDF. Nothing is uploaded anywhere."
-                            />
-                        </Reveal>
-                    </div>
-                </section>
 
                 {/* ═══════════════════════════════════════════════════════════
                     SECTION 4 — ENHANCEMENTS

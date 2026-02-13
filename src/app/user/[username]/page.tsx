@@ -6,8 +6,6 @@ import {
     Loader2,
     CheckCircle2,
     AlertTriangle,
-    Download,
-    Settings,
     Star,
     GitFork,
     Users,
@@ -106,7 +104,6 @@ export default function UserAnalysisPage({
     const [error, setError] = useState<string | null>(null);
     const [insufficientData, setInsufficientData] = useState(false);
     const [growthData, setGrowthData] = useState<AnalysisResponse | null>(null);
-    const [pdfExporting, setPdfExporting] = useState(false);
     const [isCached, setIsCached] = useState(false);
     const [forceRefresh, setForceRefresh] = useState(false);
     const [errorType, setErrorType] = useState<"not_found" | "rate_limit" | "generic">("generic");
@@ -269,17 +266,7 @@ export default function UserAnalysisPage({
         return () => abortRef.current?.abort();
     }, [username]); // eslint-disable-line react-hooks/exhaustive-deps
 
-    const handleExportPDF = async () => {
-        setPdfExporting(true);
-        try {
-            const { exportToPDF } = await import("@/lib/pdf-export");
-            await exportToPDF("analysis-dashboard", username);
-        } catch (err) {
-            console.error("PDF export failed:", err);
-        } finally {
-            setPdfExporting(false);
-        }
-    };
+
 
     const isLoading = phase !== "done" && phase !== "error" && phase !== "idle";
 
@@ -472,20 +459,7 @@ export default function UserAnalysisPage({
 
                     {/* Actions */}
                     <div className="flex flex-wrap items-center gap-2">
-                        {hasAnalysis && (
-                            <button
-                                onClick={handleExportPDF}
-                                disabled={pdfExporting}
-                                className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-2.5 text-sm text-gray-300 transition-all hover:bg-white/5 hover:text-white disabled:opacity-50"
-                            >
-                                {pdfExporting ? (
-                                    <Loader2 className="h-4 w-4 animate-spin" />
-                                ) : (
-                                    <Download className="h-4 w-4" />
-                                )}
-                                Export PDF
-                            </button>
-                        )}
+
                         <button
                             onClick={() => { setForceRefresh(true); setTimeout(runAnalysis, 0); }}
                             disabled={isLoading}

@@ -28,7 +28,7 @@ export default function LanguageChart({ languageStats, languageConfidence }: Lan
 
     const chartData = Object.entries(languageStats)
         .sort(([, a], [, b]) => b - a)
-        .slice(0, 10)
+        .slice(0, 5) // Show only top 5 as requested
         .map(([name, value]) => ({
             name,
             value,

@@ -28,19 +28,11 @@ const features = [
   },
   {
     icon: <Brain className="h-6 w-6" />,
-    title: "Secured Enterprise AI",
+    title: "Private & Secure AI",
     description:
-      "Powered by a private, secured Ollama instance running Llama 3. No external API keys required.",
+      "Powered by your own secured Ollama instance. Your data never leaves your infrastructure.",
     gradient: "from-cyan-500 to-blue-600",
     href: "/features#security",
-  },
-  {
-    icon: <FileDown className="h-6 w-6" />,
-    title: "PDF Export",
-    description:
-      "Download a comprehensive Profile Audit Report as a polished PDF to share with recruiters or use for self-improvement.",
-    gradient: "from-emerald-500 to-teal-600",
-    href: "/features#export",
   },
 ];
 
@@ -175,7 +167,7 @@ export default function HomePage() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
-          className="mt-20 grid gap-6 sm:grid-cols-3"
+          className="mt-20 grid gap-6 sm:grid-cols-2 max-w-3xl mx-auto"
         >
           {features.map((feature, index) => (
             <motion.div
