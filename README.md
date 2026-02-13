@@ -2,6 +2,9 @@
 
 An intelligent, AI-powered tool that analyzes GitHub profiles to provide actionable insights for developers, recruiters, and engineering managers. Built with Next.js and powered by **Ollama** for secure, local AI analysis.
 
+## Deployment
+> [Link](https://github-profile-analyzer-ai.vercel.app)
+
 ## 📹 Live Demo
 
 > *[Link to video](https://drive.google.com/file/d/1eklisS9kD8AhTSOazaE-BfZXqX85wI-j/view?usp=sharing)*
