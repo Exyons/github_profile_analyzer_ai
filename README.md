@@ -4,7 +4,7 @@ An intelligent, AI-powered tool that analyzes GitHub profiles to provide actiona
 
 ## 📹 Live Demo
 
->> *[Link to video](https://drive.google.com/file/d/1eklisS9kD8AhTSOazaE-BfZXqX85wI-j/view?usp=sharing)*
+> *[Link to video](https://drive.google.com/file/d/1eklisS9kD8AhTSOazaE-BfZXqX85wI-j/view?usp=sharing)*
 
 ---
 
