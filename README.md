@@ -36,7 +36,7 @@ An intelligent, AI-powered tool that analyzes GitHub profiles to provide actiona
 
 ## 🛠️ Tech Stack
 
-- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/) + [Framer Motion](https://www.framer.com/motion/) for animations.
 - **AI Backend**: [Ollama](https://ollama.com/) (Custom `ai-provider.ts` integration).
