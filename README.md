@@ -1,14 +1,10 @@
 # GitHub Profile Analyzer AI 🚀
 
-![GitHub Profile Analyzer AI Banner](./public/og-image.jpg)
-
 An intelligent, AI-powered tool that analyzes GitHub profiles to provide actionable insights for developers, recruiters, and engineering managers. Built with Next.js and powered by **Ollama** for secure, local AI analysis.
 
 ## 📹 Live Demo
 
-> **Include a screen-recording video of your live, working project in the README.md of your GitHub repository.**
-> 
-> *[Link to video will be added here]*
+>> *[Link to video](https://drive.google.com/file/d/1eklisS9kD8AhTSOazaE-BfZXqX85wI-j/view?usp=sharing)*
 
 ---
 
